@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = 'hashdot'
-  s.version           = '0.1.0'
+  s.version           = '0.1.1'
   s.summary           = 'Nicer accessors for hashes'
   s.description       = "
     Hashdot provides a nice JavaScript/Lua-style accessor for each key in your hash without much fuzz
