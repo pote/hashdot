@@ -23,3 +23,13 @@ test 'Raise appropriate exceptions for unknown methods' do |hash|
     hash.unexistant_method
   end
 end
+
+test '#respond_to? works as expected' do |hash|
+  assert hash.respond_to?(:sym)
+  assert hash.respond_to?('sym')
+  assert !hash.respond_to?(:unexistant_method)
+end
+
+test '#method works as expected' do |hash|
+  assert_equal hash.method(:sym).class, Method
+end
