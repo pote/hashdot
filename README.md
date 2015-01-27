@@ -19,5 +19,5 @@ That's pretty much it.
 ## Running tests
 
 ```bash
-$ cutest test/*.rb
+$ make test
 ```
